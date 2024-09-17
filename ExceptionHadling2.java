@@ -13,11 +13,14 @@ class ReThrowingException{
             int b=sc.nextInt();
             int c=a/b;
             System.out.println(c);
-            System.out.println("Connecton2 is terminated!!");
+            
         }
         catch (Exception e){
             System.out.println("Handled in alpha");
             throw e;
+        }
+        finally{
+            System.out.println("Connecton2 is terminated!!");
         }
     }
 }
